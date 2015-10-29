@@ -16,7 +16,7 @@ var App = {
 		orientation: Ti.Gesture.orientation == Ti.UI.LANDSCAPE_LEFT || Ti.Gesture.orientation == Ti.UI.LANDSCAPE_RIGHT ? "landscape" : "portrait"
 	},
 
-	Init: function Init() {
+	Init: function() {
 		App.Navigator = require("navigation")({
 			parent: App.globalWindow
 		});

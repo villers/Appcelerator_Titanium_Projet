@@ -50,9 +50,9 @@ function openSubViewDocuments(e) {
 }
 
 $.notes.on('gotNotes', function(e) {
-    $.scrollableView.scrollToView(0);
+	$.scrollableView.scrollToView(0);
 });
 
 $.documents.on('gotDocuments', function(e) {
-    $.scrollableView.scrollToView(1);
+	$.scrollableView.scrollToView(1);
 });

@@ -43,10 +43,10 @@ Request(query);
  * gestion du clique sur la listview
  */
 $.list.addEventListener('itemclick', function(e){
- 	var section = $.list.sections[e.sectionIndex];
-    var item = section.getItemAt(e.itemIndex);  
-    
-    var query = {
+	var section = $.list.sections[e.sectionIndex];
+	var item = section.getItemAt(e.itemIndex);
+
+	var query = {
 		url: 'https://intra.epitech.eu' + item.fullpath.text,
 		type: 'GET',
 		format: 'DATA',
@@ -56,16 +56,14 @@ $.list.addEventListener('itemclick', function(e){
 		},
 		success: function(data) {
 			var file;
-	        if(Ti.Filesystem.isExternalStoragePresent()) {
-	        	file = Ti.Filesystem.getFile(Ti.Filesystem.externalStorageDirectory, item.title.text);
-	        } else {
-	        	file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, item.title.text);  
-	    	}
-			
-			if (!file.write(data)) {
+			if (Ti.Filesystem.isExternalStoragePresent())
+				file = Ti.Filesystem.getFile(Ti.Filesystem.externalStorageDirectory, item.title.text);
+			else
+				file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, item.title.text);
+
+			if (!file.write(data))
 				alert('save fail');
-			}
-			
+
 			var intent = Ti.Android.createIntent({
 				action : Ti.Android.ACTION_VIEW,
 				type : 'application/pdf',
@@ -74,5 +72,5 @@ $.list.addEventListener('itemclick', function(e){
 			Ti.Android.currentActivity.startActivity(intent);
 		}
 	};
-	Request(query);	
+	Request(query);
 });

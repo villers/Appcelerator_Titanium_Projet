@@ -12,7 +12,7 @@ exports.definition = {
 			"date": "TEXT",
 			"correcteur": "TEXT",
 			"final_note": "TEXT",
-			"comment": "TEXT",
+			"comment": "TEXT"
 		},
 		adapter: {
 			type: "sql",

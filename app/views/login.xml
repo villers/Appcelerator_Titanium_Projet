@@ -1,14 +1,14 @@
 <Alloy>
 	<ScrollView id="login" class='vgroup top'>
 		<View class="vgroup top size">
-			
+
 			<View class="spacer"/>
-			
+
 			<ImageView image="/images/logo.png" width="80%" height="auto"></ImageView>
-			
+
 			<Label class="h1 gray">Connexion</Label>
 			<Label id="error" class="h5 error rounded"></Label>
-			
+
 			<View class="vgroup top size">
 				<Label class="h5 gray">Login:</Label>
 				<TextField id="login" class="gray"></TextField>
@@ -18,7 +18,7 @@
 				<Label class="h5 gray">Password:</Label>
 				<TextField id="password" passwordMask="true" class="gray"></TextField>
 			</View>
-			
+
 			<Button id="doLogin" onClick="doLogin" class="h4 span-width top-buffer size">Se connecter</Button>
 		</View>
 	</ScrollView>

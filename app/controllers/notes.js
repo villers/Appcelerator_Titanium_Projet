@@ -50,8 +50,8 @@ Request(query);
  * gestion du clique sur la listview
  */
 $.list.addEventListener('itemclick', function(e){
- 	var section = $.list.sections[e.sectionIndex];
-    var item = section.getItemAt(e.itemIndex);
+	var section = $.list.sections[e.sectionIndex];
+	var item = section.getItemAt(e.itemIndex);
 	var dialog = Alloy.createController("dialog").getView();
 	dialog.setTitle('Commentaire');
 	dialog.setOk('Okey');

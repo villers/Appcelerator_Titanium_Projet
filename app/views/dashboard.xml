@@ -8,19 +8,19 @@
 				<Label id="school_title" class="subtitle h5" />
 			</View>
 		</View>
-		
+
 		<View class="gray-line bottom"/>
-		
+
 		<View class="hgroup size block-gpa">
 			<Label id="gpa" class="white h4 top-buffer w50 center" />
 			<Label id="credit" class="white h4 top-buffer w50 center" />
 		</View>
-		
+
 		<!--<View class="hgroup size block-btn">
 			<Button onClick="openSubViewNotes" class="h4 buffer size">Mes notes</Button>
 			<Button onClick="openSubViewDocuments" class="h4 buffer size">Documents</Button>
 		</View>-->
-		
+
 		<ScrollableView id="scrollableView" showPagingControl="true">
 			<Require src="notes" id="notes" />
 			<Require src="documents" id="documents" />

@@ -1,22 +1,22 @@
 <Alloy>
-	<Collection src="notes"/>
-	<ListView id="list" defaultItemTemplate="contentDefault">
-      	<Templates>
+    <Collection src="notes"/>
+    <ListView id="list" defaultItemTemplate="contentDefault">
+        <Templates>
             <ItemTemplate name="contentDefault" class="vgroup buffer">
                 <Label bindId="title" class="h4 gray" />
                 <Label bindId="final_note" class="h4 gray" />
                 <View class="gray-line bottom"/>
             </ItemTemplate>
         </Templates>
-        
+
         <HeaderView>
-            <View id="isCenter" class="vgroup isCenter block-btn">
+            <View id="isCenter" class="vgroup block-btn">
                 <Label id="isText" class="h1 white">Mes notes</Label>
             </View>
-	    </HeaderView>
-        
+        </HeaderView>
+
         <ListSection id="contentListSection" dataCollection="notes">
             <ListItem template="contentDefault" title:text="{title}" final_note:text="{final_note}" comment:text="{comment}" />
-        </ListSection> 
-	</ListView>
+        </ListSection>
+    </ListView>
 </Alloy>
