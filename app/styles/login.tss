@@ -1,0 +1,10 @@
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL
+}
+
+"TextField": {
+	left:0,
+	width:'60%',
+	borderWidth: '1px',
+	borderColor: '#CCCCCC'
+}

@@ -1,0 +1,4 @@
+"Label":{
+	autoLink: Titanium.UI.AUTOLINK_NONE,
+	color: '#64afd7'
+},

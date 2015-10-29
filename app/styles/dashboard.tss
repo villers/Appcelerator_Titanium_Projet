@@ -1,0 +1,25 @@
+"Label":{
+	autoLink: Ti.UI.AUTOLINK_ALL
+},
+
+".title":{
+	left: 10,
+	color: "#444"
+},
+
+".subtitle":{
+	left: 10,
+	height: 20,
+	color: "#666"
+},
+
+".avatar":{
+	borderWidth: 1,
+	borderColor: "#acacac",
+	height: 75,
+	width: 75,
+	top: 12,
+	left: 0,
+	borderRadius: 35
+}
+

@@ -1,0 +1,21 @@
+<Alloy>
+	<Collection src="documents"/>
+	<ListView id="list" defaultItemTemplate="contentDefault">
+      	<Templates>
+            <ItemTemplate name="contentDefault" class="vgroup buffer">
+                <Label bindId="title" class="h4 gray" />
+                <View class="gray-line bottom"/>
+            </ItemTemplate>
+        </Templates>
+        
+        <HeaderView>
+            <View id="isCenter" class="vgroup isCenter block-btn">
+                <Label id="isText" class="h1 white">Mes documents</Label>
+            </View>
+	    </HeaderView>
+        
+        <ListSection id="contentListSection" dataCollection="documents">
+            <ListItem template="contentDefault" title:text="{title}" fullpath:text="{fullpath}" />
+        </ListSection>
+	</ListView>
+</Alloy>
