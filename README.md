@@ -1,15 +1,4 @@
-Appcelerator_Titanium_Projet
-
-Une application mobile pour l'intra de la web@cadémie
-
-for run application:
-appc run -p android -T device
-
-for build application:
-ti build -p android -T device --shadow
-
-
-# Projet Appcelerator Titanium W@C
+# Projet Appcelerator Titanium
 
 ## Description du Projet
 
@@ -22,4 +11,4 @@ L'application regroupera :
 2. Une page `dashboard` regroupant le profil de l'utilisateur, ses notes et ainsi que ses bulletins .
 
 ## pour démarrer l'application sur un android
-appc run -p android -T device
+`appc run -p android -T device`
