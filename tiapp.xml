@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>ghota.school</id>
-    <name>Appcelerator_Titanium_Projet_2</name>
+    <name>Web@cademie</name>
     <version>1.0</version>
     <publisher>viller_m</publisher>
     <url>http://mickaelvillers.me</url>
-    <description>undefined</description>
+    <description>Application de l'intra d ela web@cademie</description>
     <copyright>2015 by viller_m</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
