@@ -8,7 +8,7 @@ L'application regroupera :
 
 1. Une page `Connexion`
 
-2. Une page `dashboard` regroupant le profil de l'utilisateur, ses notes et ainsi que ses bulletins .
+2. Une page `dashboard` regroupant le profil de l'utilisateur, ses notes, son planning ainsi que ses documents .
 
 ## pour démarrer l'application sur un android
 `appc run -p android -T device`
