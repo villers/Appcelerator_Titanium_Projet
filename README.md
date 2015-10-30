@@ -12,3 +12,8 @@ L'application regroupera :
 
 ## pour démarrer l'application sur un android
 `appc run -p android -T device`
+
+
+## mockup
+
+https://moqups.com/villers/TxLngPq9
