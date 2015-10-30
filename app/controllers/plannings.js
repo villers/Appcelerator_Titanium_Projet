@@ -17,7 +17,7 @@ var password = Ti.App.Properties.getString('password');
  * récupère la liste des notes
  */
 var query = {
-	url: 'https://intra.epitech.eu/planning/load?format=json&start=2015-10-26&end=2015-11-01',
+	url: 'https://intra.epitech.eu/planning/load?format=json',
 	type: 'GET',
 	format: 'JSONP',
 	data: {

@@ -54,7 +54,7 @@ $.list.addEventListener('itemclick', function(e){
 	var item = section.getItemAt(e.itemIndex);
 	var dialog = Alloy.createController("dialog").getView();
 	dialog.setTitle('Commentaire');
-	dialog.setOk('Okey');
+	dialog.setOk('Fermer');
 	dialog.setMessage(item.comment.text);
 	dialog.show();
 });
