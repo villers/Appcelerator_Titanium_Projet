@@ -37,22 +37,3 @@ var query = {
 	}
 };
 Request(query);
-
-/*
- * gestion de la scrollview
- */
-function openSubViewNotes(e) {
-	$.notes.trigger('gotNotes', e);
-}
-
-function openSubViewDocuments(e) {
-	$.documents.trigger('gotDocuments', e);
-}
-
-$.notes.on('gotNotes', function(e) {
-	$.scrollableView.scrollToView(0);
-});
-
-$.documents.on('gotDocuments', function(e) {
-	$.scrollableView.scrollToView(1);
-});

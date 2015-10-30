@@ -1,0 +1,25 @@
+<Alloy>
+    <Collection src="plannings"/>
+    <ListView id="list" defaultItemTemplate="contentDefault">
+        <Templates>
+            <ItemTemplate name="contentDefault" class="vgroup buffer">
+                <Label bindId="titlemodule" class="h4 gray" />
+                <Label bindId="room" class="h4 gray" />
+                <Label bindId="acti_title" class="h4 gray" />
+                <Label bindId="start" class="h4 gray" />
+                <Label bindId="end" class="h4 gray" />
+                <View class="gray-line bottom"/>
+            </ItemTemplate>
+        </Templates>
+
+        <HeaderView>
+            <View id="isCenter" class="vgroup block-btn">
+                <Label id="isText" class="h1 white">Mon Planning</Label>
+            </View>
+        </HeaderView>
+
+        <ListSection id="contentListSection" dataCollection="plannings">
+            <ListItem template="contentDefault" titlemodule:text="{titlemodule}" room:text="{room}" acti_title:text="{acti_title}" start:text="{start}" end:text="{end}" />
+        </ListSection>
+    </ListView>
+</Alloy>

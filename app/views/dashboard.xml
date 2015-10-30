@@ -23,6 +23,7 @@
 
 		<ScrollableView id="scrollableView" showPagingControl="true">
 			<Require src="notes" id="notes" />
+			<Require src="plannings" id="plannings" />
 			<Require src="documents" id="documents" />
 		</ScrollableView>
 	</View>
