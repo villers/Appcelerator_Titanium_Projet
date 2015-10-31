@@ -14,7 +14,7 @@ var login = Ti.App.Properties.getString('login');
 var password = Ti.App.Properties.getString('password');
 
 /*
- * récupère la liste des notes
+ * récupère la liste du planning
  */
 var query = {
 	url: 'https://intra.epitech.eu/planning/load?format=json',
